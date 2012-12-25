@@ -10,6 +10,7 @@
 		07A5E003165C01BB00B05F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A5E002165C01BB00B05F75 /* Foundation.framework */; };
 		07A5E006165C01BB00B05F75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5E005165C01BB00B05F75 /* main.m */; };
 		07A5E00A165C01BB00B05F75 /* hostie.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07A5E009165C01BB00B05F75 /* hostie.1 */; };
+		07A5E012165C23D300B05F75 /* TFStringHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A5E011165C23D300B05F75 /* TFStringHandlers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		07A5E005165C01BB00B05F75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07A5E008165C01BB00B05F75 /* hostie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hostie-Prefix.pch"; sourceTree = "<group>"; };
 		07A5E009165C01BB00B05F75 /* hostie.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hostie.1; sourceTree = "<group>"; };
+		07A5E010165C23D300B05F75 /* TFStringHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFStringHandlers.h; sourceTree = "<group>"; };
+		07A5E011165C23D300B05F75 /* TFStringHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFStringHandlers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				07A5E005165C01BB00B05F75 /* main.m */,
+				07A5E010165C23D300B05F75 /* TFStringHandlers.h */,
+				07A5E011165C23D300B05F75 /* TFStringHandlers.m */,
 				07A5E009165C01BB00B05F75 /* hostie.1 */,
 				07A5E007165C01BB00B05F75 /* Supporting Files */,
 			);
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A5E006165C01BB00B05F75 /* main.m in Sources */,
+				07A5E012165C23D300B05F75 /* TFStringHandlers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +211,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostie/hostie-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -214,6 +221,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hostie/hostie-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -236,6 +244,7 @@
 				07A5E00F165C01BB00B05F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
